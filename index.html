@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Covid-19 by State </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+</head>
+
+<body>
+    <!-- The Main Page aka the first page  hidden-->
+    <div class="container text-center first">
+        <div class="row">
+            <h1>Covid-19 by State</h1>
+        </div>
+        <div class="row">
+            <p>Pick which state you would like to see</p>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control" required>
+                    <option selected >Choose...</option> 
+                </select>
+            </div>
+        </div>
+    </div>  
+
+    <!-- 2nd page -->
+    <div class="container text-center second hidden">
+        <div class="row"> 
+            <h2 class="state-name"></h2>
+        </div>
+          <div class="row"><hr>
+            <div class="col-6 col-sm-3 right"><h4 class="col">Update was on</h4><hr> <h4 class=" col date"></h4></div>
+            <div class="col-6 col-sm-3 right"><h4 class="col"> New Cases Today</h4> <hr> <h4 class="col today-cases"></h4></div>
+          
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+          
+            <div class="col-6 col-sm-3 right"><h4 class="col"> Total Cases</h4> <hr> <h4 class="col total-cases"></h4></div>
+            <div class="col-6 col-sm-3 right"><h4 class="col"> Grade Level</h4><hr><h4 class="col grade"></h4></div>
+          </div>
+    </div> 
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="main.js"></script>
+
+</html> 
+
